@@ -2,7 +2,7 @@
 
 @section('title','Home')
 
-@push('css')
+<!-- @push('css')
     <link href="{{ asset('assets/frontend/css/home/styles.css') }}" rel="stylesheet">
 
     <link href="{{ asset('assets/frontend/css/home/responsive.css') }}" rel="stylesheet">
@@ -11,7 +11,7 @@
             color: blue;
         }
     </style>
-@endpush
+@endpush -->
 
 @section('content')
     <div class="main-slider">
@@ -96,7 +96,7 @@
 
             </div><!-- row -->
 
-            <a class="load-more-btn" href="#"><b>LOAD MORE</b></a>
+            <!-- <a class="load-more-btn" href="#"><b>LOAD MORE</b></a> -->
 
         </div><!-- container -->
     </section><!-- section -->

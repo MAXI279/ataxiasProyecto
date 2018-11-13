@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title') - {{ config('app.name', 'Laravel') }}</title>
+    <title>@yield('title') - {{ config('app.name', 'ATAR') }}</title>
     <!-- Favicon-->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
@@ -37,6 +37,7 @@
     @stack('css')
 </head>
 <body class="theme-blue">
+
 <!-- Page Loader -->
 <div class="page-loader-wrapper">
     <div class="loader">
