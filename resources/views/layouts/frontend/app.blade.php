@@ -44,6 +44,7 @@
 <body>
 
 @include('layouts.frontend.partial.header')
+@include('layouts.frontend.partial.slider')
 
 @yield('content')
 

@@ -12,6 +12,7 @@
                     <div class="header-bar-text">
                         <p>TELÉFONO: <span>(011) 4585-1290 de lunes a viernes de 18 a 22Hs</span></p>
                     </div><!-- .header-bar-text -->
+
                 </div><!-- .col -->
 
                 <div class="col-12 col-lg-4 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
@@ -43,23 +44,15 @@
                             <li><a href="portfolio.html">Galería</a></li>
                             <li><a href="contact.html">Contacto</a></li>
                             @guest
-                                <li><a href="{{ route('login') }}">Login</a></li>
+                                <li><a href="{{ route('login') }}">Iniciar sesión</a></li>
                             @else
                                 @if(Auth::user()->role->id == 1)
-                                    <li><a href="{{ route('admin.dashboard') }}">Escritorio</a></li>
+                                    <li><a href="{{ route('admin.dashboard') }}">Tablero</a></li>
                                 @endif
                                 @if(Auth::user()->role->id == 2)
-                                    <li><a href="{{ route('author.dashboard') }}">Escritorio</a></li>
+                                    <li><a href="{{ route('author.dashboard') }}">Tablero</a></li>
                                 @endif
                             @endguest
-                            <li>
-                            <div class="subscribe-form">
-                                <form class="form-inline my-2 my-lg-0 d-flex flex-wrap align-items-center"" method="GET" action="{{ route('search') }}">
-                                    <input class="form-control mr-sm-2src-input" value="{{ isset($query) ? $query : '' }}" name="query" type="text" placeholder="Ingresá una palabra">
-                                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-                                </form>
-                            </div>
-                            </li>
                         </ul>
                     </nav><!-- .site-navigation -->
 
