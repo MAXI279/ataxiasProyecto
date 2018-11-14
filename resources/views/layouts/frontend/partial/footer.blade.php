@@ -50,7 +50,7 @@
                         <ul>
                             <li><i class="fa fa-phone"></i><span>+54 011 4585 1290</span></li>
                             <li><i class="fa fa-envelope"></i><span>ataxias@atar.org.ar</span></li>
-                            <li><i class="fa fa-map-marker"></i><span>Dirección de ATAR?</span></li>
+                            <li><i class="fa fa-map-marker"></i><span>Tres Arroyos 1161 - dpto 4 (CP:1416) - Ciudad Autónoma de Buenos Aires, Argentina</span></li>
                         </ul>
                     </div><!-- .foot-contact -->
 
