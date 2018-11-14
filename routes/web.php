@@ -15,6 +15,8 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::get('posts','PostController@index')->name('post.index');
 Route::get('post/{slug}','PostController@details')->name('post.details');
 
+Route::get('asociacion', 'AsociacionController@asociacion')->name('asociacion');
+
 Route::get('/category/{slug}','PostController@postByCategory')->name('category.posts');
 Route::get('/tag/{slug}','PostController@postByTag')->name('tag.posts');
 

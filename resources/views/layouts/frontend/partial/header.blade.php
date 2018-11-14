@@ -1,7 +1,7 @@
 <header>
 
 <!-- DE ACA PARA ABAJO CHARITY -->
-<div class="top-header-bar">
+    <div class="top-header-bar">
         <div class="container">
             <div class="row flex-wrap justify-content-center justify-content-lg-between align-items-lg-center">
                 <div class="col-12 col-lg-8 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
@@ -25,40 +25,51 @@
         </div><!-- .container -->
     </div><!-- .top-header-bar -->
 
-    <div class="nav-bar">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
-                    <!-- <div class="site-branding d-flex align-items-center">
-                        <a class="d-block" href="index.html" rel="home"><img class="d-block" src="img/atar.png" alt="logo"></a>
-                    </div>.site-branding -->
-                    
-                    <a class="navbar-brand" href="{{ route('home') }}">
-                        <img src="img/atar.png" width="150" height="150" alt="logo">
-                    </a>                    
-                    <nav class="site-navigation d-flex justify-content-end align-items-center">
-                        <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-content-center">
-                            <li class="{{ Request::is('home') ? 'active' : '' }}"><a href="{{ route('home') }}">Home</a></li>
-                            <li><a href="about.html">Sobre nosotros</a></li>
-                            <li><a href="{{ route('post.index') }}"">Posts</a></li>
-                            <li><a href="portfolio.html">Galería</a></li>
-                            <li><a href="contact.html">Contacto</a></li>
-                            @guest
-                                <li><a href="{{ route('login') }}">Iniciar sesión</a></li>
-                            @else
-                                @if(Auth::user()->role->id == 1)
-                                    <li><a href="{{ route('admin.dashboard') }}">Tablero</a></li>
-                                @endif
-                                @if(Auth::user()->role->id == 2)
-                                    <li><a href="{{ route('author.dashboard') }}">Tablero</a></li>
-                                @endif
-                            @endguest
-                        </ul>
-                    </nav><!-- .site-navigation -->
+    <div class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{{ route('home') }}">
+            <img src="img/atar.png" width="150" height="150" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <nav class="collapse navbar-collapse site-navigation d-flex justify-content-end align-items-center">
+                <ul class="navbar-nav d-flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+                    <li class="nav-item {{ Request::is('/') ? 'current-menu-item active' : '' }}">
+                        <a class="nav-link" href="{{ route('home') }}">Home</a>
+                    </li>
+                    <li class="nav-item {{ Request::is('asociacion') ? 'current-menu-item active' : '' }}">
+                        <a class="nav-link" href="{{ route('asociacion') }}">Asociación</a>
+                    </li>
+                    <li class="nav-item {{ Request::is('post*') ? 'current-menu-item active' : '' }}">
+                        <a class="nav-link" href="{{ route('post.index') }}"">Posts</a>
+                    </li>
+                    <li class="nav-item {{ Request::is('portfolio') ? 'current-menu-item active' : '' }}">
+                        <a class="nav-link" href="portfolio.html">Galería</a>
+                    </li>
+                    <li class="nav-item {{ Request::is('contact') ? 'current-menu-item active' : '' }}">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+                    @guest
+                        <li class="nav-item {{ Request::is('login') ? 'current-menu-item active' : '' }}">
+                            <a class="nav-link" href="{{ route('login') }}">Iniciar sesión</a>
+                        </li>
+                    @else
+                        @if(Auth::user()->role->id == 1)
+                            <li class="nav-item {{ Request::is('admin*') ? 'current-menu-item active' : '' }}">
+                                <a class="nav-link" href="{{ route('admin.dashboard') }}">Tablero</a>
+                            </li>
+                        @endif
+                        @if(Auth::user()->role->id == 2)
+                            <li class="nav-item {{ Request::is('author*') ? 'current-menu-item active' : '' }}">
+                                <a class="nav-link" href="{{ route('author.dashboard') }}">Tablero</a>
+                            </li>
+                        @endif
+                    @endguest
+                </ul>
+            </nav><!-- .site-navigation -->
 
-                </div><!-- .col -->
-            </div><!-- .row -->
-        </div><!-- .container -->
+        </div><!-- .col -->
     </div><!-- .nav-bar -->
 
 

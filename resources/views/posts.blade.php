@@ -13,9 +13,6 @@
 @endpush
 
 @section('content')
-    <div class="slider display-table center-text">
-        <h1 class="title display-table-cell"><b>ALL POSTS</b></h1>
-    </div><!-- slider -->
 
     <section class="blog-area section">
         <div class="container">
