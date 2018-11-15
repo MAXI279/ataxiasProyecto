@@ -30,7 +30,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav d-flex flex-column flex-lg-row justify-content-lg-end align-content-center">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item {{ Request::is('/') ? 'current-menu-item active' : '' }}">
                     <a class="nav-link" href="{{ route('home') }}">Home</a>
                 </li>
