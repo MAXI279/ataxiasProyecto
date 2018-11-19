@@ -62,11 +62,11 @@
                 <div class="col-lg-4 col-md-12 no-left-padding">
                     <div class="single-post info-area">
                         <div class="sidebar-area about-area">
-                            <h4 class="title"><b>ABOUT AUTHOR</b></h4>
+                            <h4 class="title"><b>SOBRE EL AUTOR</b></h4>
                             <p>{{ $post->user->about }}</p>
                         </div>
                         <div class="tag-area">
-                            <h4 class="title"><b>CATEGORIES</b></h4>
+                            <h4 class="title"><b>CATEGORÍAS</b></h4>
                             <ul>
                                 @foreach($post->categories as $category)
                                     <li><a href="{{ route('category.posts',$category->slug) }}">{{ $category->name }}</a></li>
@@ -118,12 +118,12 @@
     </section>
     <section class="comment-section">
         <div class="container">
-            <h4><b>POST COMMENT</b></h4>
+            <h4><b>Comentarios</b></h4>
             <div class="row">
                 <div class="col-lg-8 col-md-12">
                     <div class="comment-form">
                         @guest
-                            <p>For post a new comment. You need to login first. <a href="{{ route('login') }}">Login</a></p>
+                            <p>Para comentar este post necesitas estar logueado. <a href="{{ route('login') }}">Login</a></p>
                         @else
                             <form method="post" action="{{ route('comment.store',$post->id) }}">
                                 @csrf
@@ -133,7 +133,7 @@
                                                   placeholder="Enter your comment" aria-required="true" aria-invalid="false"></textarea >
                                     </div><!-- col-sm-12 -->
                                     <div class="col-sm-12">
-                                        <button class="submit-btn" type="submit" id="form-submit"><b>POST COMMENT</b></button>
+                                        <button class="submit-btn" type="submit" id="form-submit"><b>COMENTAR</b></button>
                                     </div><!-- col-sm-12 -->
 
                                 </div><!-- row -->
@@ -161,7 +161,7 @@
                     @else
                     <div class="commnets-area ">
                         <div class="comment">
-                            <p>No hay comentarios. Soyyez le premier.</p>
+                            <p>No hay comentarios. Soyez le premier.</p>
                         </div>
                     </div>
                     @endif

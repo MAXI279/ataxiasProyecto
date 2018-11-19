@@ -47,16 +47,23 @@
 
 </head>
 <body>
-
-@include('layouts.frontend.partial.header')
-
+<header>
+    @include('layouts.frontend.partial.topbar')
+    @include('layouts.frontend.partial.header')
+</header>
 @if(\Request::is('/'))
     @include('layouts.frontend.partial.slider')
 @endif
 
+<br>
+
 @yield('content')
 
-@include('layouts.frontend.partial.footer')
+<br>
+
+<footer>
+    @include('layouts.frontend.partial.footer')
+</footer>
 
 <!-- CHARITY -->
     <script type='text/javascript' src='charity/js/jquery.js'></script>

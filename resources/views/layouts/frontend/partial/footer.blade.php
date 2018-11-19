@@ -1,5 +1,4 @@
 <footer class="page-footer indigo center-on-small-only pt-0" style="width: 100%;">
-<br>
     <div class="footer-widgets">
         <div class="container">
             <div class="row">

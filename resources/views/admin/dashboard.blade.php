@@ -2,9 +2,7 @@
 
 @section('title','Dashboard')
 
-@push('css')
 
-@endpush
 
 @section('content')
     <div class="container-fluid">
@@ -20,7 +18,7 @@
                         <i class="material-icons">playlist_add_check</i>
                     </div>
                     <div class="content">
-                        <div class="text">TOTAL POSTS</div>
+                        <div class="text">TODOS LOS POSTS</div>
                         <div class="number count-to" data-from="0" data-to="{{ $posts->count() }}" data-speed="15" data-fresh-interval="20"></div>
                     </div>
                 </div>
@@ -31,7 +29,7 @@
                         <i class="material-icons">favorite</i>
                     </div>
                     <div class="content">
-                        <div class="text">TOTAL FAVORITE</div>
+                        <div class="text">TODOS LOS FAVORITOS</div>
                         <div class="number count-to" data-from="0" data-to="{{ Auth::user() ->favorite_posts()->count() }}" data-speed="1000" data-fresh-interval="20"></div>
                     </div>
                 </div>
@@ -42,7 +40,7 @@
                         <i class="material-icons">library_books</i>
                     </div>
                     <div class="content">
-                        <div class="text">PENDING POSTS</div>
+                        <div class="text">POSTS PENDIENTES</div>
                         <div class="number count-to" data-from="0" data-to="{{ $total_pending_posts }}" data-speed="1000" data-fresh-interval="20"></div>
                     </div>
                 </div>
@@ -53,7 +51,7 @@
                         <i class="material-icons">person_add</i>
                     </div>
                     <div class="content">
-                        <div class="text">TOTAL VIEWS</div>
+                        <div class="text">VISTAS TOTAL</div>
                         <div class="number count-to" data-from="0" data-to="{{ $all_views }}" data-speed="1000" data-fresh-interval="20"></div>
                     </div>
                 </div>
@@ -68,7 +66,7 @@
                         <i class="material-icons">apps</i>
                     </div>
                     <div class="content">
-                        <div class="text">CATEGORIES</div>
+                        <div class="text">CATEGORÍAS</div>
                         <div class="number count-to" data-from="0" data-to="{{ $category_count }}" data-speed="15" data-fresh-interval="20"></div>
                     </div>
                 </div>
@@ -86,7 +84,7 @@
                         <i class="material-icons">account_circle</i>
                     </div>
                     <div class="content">
-                        <div class="text">TOTAL AUTHOR</div>
+                        <div class="text">TODO DEL AUTHOR</div>
                         <div class="number count-to" data-from="0" data-to="{{ $author_count }}" data-speed="15" data-fresh-interval="20"></div>
                     </div>
                 </div>
@@ -103,7 +101,7 @@
             <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9">
                 <div class="card">
                     <div class="header">
-                        <h2>MOST POPULAR POST</h2>
+                        <h2>POSTS MÁS POPULARES</h2>
                     </div>
                     <div class="body">
                         <div class="table-responsive">
@@ -155,7 +153,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="card">
                     <div class="header">
-                        <h2>TOP 10 ACTIVE AUTHOR</h2>
+                        <h2>TOP 10 AUTORES ACTIVOS</h2>
                     </div>
                     <div class="body">
                         <div class="table-responsive">
@@ -190,21 +188,3 @@
     </div>
 @endsection
 
-@push('js')
-    <!-- Jquery CountTo Plugin Js -->
-    <script src="{{ asset('assets/backend/plugins/jquery-countto/jquery.countTo.js') }}"></script>
-    <!-- Morris Plugin Js -->
-    <script src="{{ asset('assets/backend/plugins/raphael/raphael.min.js') }}"></script>
-    <script src="{{ asset('assets/backend/plugins/morrisjs/morris.js') }}"></script>
-    <!-- ChartJs -->
-    <script src="{{ asset('assets/backend/plugins/chartjs/Chart.bundle.js') }}"></script>
-    <!-- Flot Charts Plugin Js -->
-    <script src="assets/backend/plugins/flot-charts/jquery.flot.js"></script>
-    <script src="assets/backend/plugins/flot-charts/jquery.flot.resize.js"></script>
-    <script src="assets/backend/plugins/flot-charts/jquery.flot.pie.js"></script>
-    <script src="assets/backend/plugins/flot-charts/jquery.flot.categories.js"></script>
-    <script src="assets/backend/plugins/flot-charts/jquery.flot.time.js"></script>
-    <!-- Sparkline Chart Plugin Js -->
-    <script src="assets/backend/plugins/jquery-sparkline/jquery.sparkline.js"></script>
-    <script src="{{ asset('assets/backend/js/pages/index.js') }}"></script>
-@endpush
