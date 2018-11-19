@@ -18,7 +18,7 @@
                     <div class="card">
                         <div class="header">
                             <h2>
-                                EDIT POST
+                                EDITAR POST
                             </h2>
                         </div>
                         <div class="body">
@@ -46,7 +46,7 @@
                     <div class="card">
                         <div class="header">
                             <h2>
-                                Categories and Tags
+                                Categorias y Tags
                             </h2>
                         </div>
                         <div class="body">
@@ -81,7 +81,7 @@
                             </div>
 
                             <a  class="btn btn-danger m-t-15 waves-effect" href="{{ route('admin.category.index') }}">BACK</a>
-                            <button type="submit" class="btn btn-primary m-t-15 waves-effect">SUBMIT</button>
+                            <button type="submit" class="btn btn-primary m-t-15 waves-effect">ENVIAR</button>
 
                         </div>
                     </div>
@@ -92,7 +92,7 @@
                     <div class="card">
                         <div class="header">
                             <h2>
-                                BODY
+                                CONTENIDO
                             </h2>
                         </div>
                         <div class="body">

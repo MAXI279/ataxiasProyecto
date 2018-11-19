@@ -10,6 +10,8 @@
 
                         <ul class="d-flex flex-wrap align-items-center">
                             <li><a href="https://www.facebook.com/AtarONG/" target=”_blank” class="fa fa-facebook"></a></li>
+                            <li><a href="https://www.instagram.com/atar.ong/" target=”_blank” class="fa fa-instagram"></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCVtQWuZkILaVff2zvlJxqVg" target=”_blank” class="fa fa-youtube"></a></li>
                             <li><a href="https://twitter.com/atar_ong" target=”_blank” class="fa fa-twitter"></a></li>
                         </ul>
                     </div><!-- .foot-about -->
@@ -36,7 +38,7 @@
                         <ul>
                             <li>
                                 <h3><a href="#">A new cause to help</a></h3>
-                                <div class="posted-date">MArch 12, 2018</div>
+                                <div class="posted-date">March 12, 2018</div>
                             </li>
                         </ul>
                     </div><!-- .foot-latest-news -->

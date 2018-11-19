@@ -16,7 +16,7 @@
                 <div class="card">
                     <div class="header">
                         <h2>
-                            ALL SUBSCRIBERS
+                            SUSCRIPTORES
                             <span class="badge bg-blue">{{ $subscribers->count() }}</span>
                         </h2>
                     </div>

@@ -13,7 +13,7 @@
                 <div class="card">
                     <div class="header">
                         <h2>
-                            SETTINGS
+                            CONFIGURACIÓN
                         </h2>
                         <ul class="header-dropdown m-r--5">
                             <li class="dropdown">
@@ -33,12 +33,12 @@
                         <ul class="nav nav-tabs" role="tablist">
                             <li role="presentation" class="active">
                                 <a href="#profile_with_icon_title" data-toggle="tab">
-                                    <i class="material-icons">face</i> UPDATE PROFILE
+                                    <i class="material-icons">face</i> ACTUALIZAR PERFIL
                                 </a>
                             </li>
                             <li role="presentation">
                                 <a href="#change_password_with_icon_title" data-toggle="tab">
-                                    <i class="material-icons">change_history</i> CHANGE PASSWORD
+                                    <i class="material-icons">change_history</i> CAMBIAR CONTRASEÑA
                                 </a>
                             </li>
 
@@ -52,31 +52,31 @@
                                     @method('PUT')
                                     <div class="row clearfix">
                                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                                            <label for="name">Name : </label>
+                                            <label for="name">Nombre : </label>
                                         </div>
                                         <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                                             <div class="form-group">
                                                 <div class="form-line">
-                                                    <input type="text" id="name" class="form-control" placeholder="Enter your name" name="name" value="{{ Auth::user()->name }}">
+                                                    <input type="text" id="name" class="form-control" placeholder="Ingrese su nombre" name="name" value="{{ Auth::user()->name }}">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row clearfix">
                                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                                            <label for="email_address_2">Email Address</label>
+                                            <label for="email_address_2">Correo electrónico : </label>
                                         </div>
                                         <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                                             <div class="form-group">
                                                 <div class="form-line">
-                                                    <input type="text" id="email_address_2" class="form-control" placeholder="Enter your email address" name="email" value="{{ Auth::user()->email }}">
+                                                    <input type="text" id="email_address_2" class="form-control" placeholder="Ingrese su correo electrónico" name="email" value="{{ Auth::user()->email }}">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row clearfix">
                                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                                            <label for="email_address_2">Profile Image : </label>
+                                            <label for="email_address_2">Imagen de perfil : </label>
                                         </div>
                                         <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                                             <div class="form-group">
@@ -88,7 +88,7 @@
                                     </div>
                                     <div class="row clearfix">
                                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                                            <label for="email_address_2">About : </label>
+                                            <label for="email_address_2">Sobre mí : </label>
                                         </div>
                                         <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                                             <div class="form-group">
@@ -102,7 +102,7 @@
 
                                     <div class="row clearfix">
                                         <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-4 col-xs-offset-5">
-                                            <button type="submit" class="btn btn-primary m-t-15 waves-effect">UPDATE</button>
+                                            <button type="submit" class="btn btn-primary m-t-15 waves-effect">ACTUALIZAR</button>
                                         </div>
                                     </div>
                                 </form>
@@ -113,12 +113,12 @@
                                     @method('PUT')
                                     <div class="row clearfix">
                                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                                            <label for="old_password">Old Password : </label>
+                                            <label for="old_password">Contraseña anterior : </label>
                                         </div>
                                         <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                                             <div class="form-group">
                                                 <div class="form-line">
-                                                    <input type="password" id="old_password" class="form-control" placeholder="Enter your old password" name="old_password">
+                                                    <input type="password" id="old_password" class="form-control" placeholder="Ingrese su antigua contraseña" name="old_password">
                                                 </div>
                                             </div>
                                         </div>
@@ -126,12 +126,12 @@
 
                                     <div class="row clearfix">
                                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                                            <label for="password">New Password : </label>
+                                            <label for="password">Nueva contraseña : </label>
                                         </div>
                                         <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                                             <div class="form-group">
                                                 <div class="form-line">
-                                                    <input type="password" id="password" class="form-control" placeholder="Enter your new password" name="password">
+                                                    <input type="password" id="password" class="form-control" placeholder="Ingrese su nueva contraseña" name="password">
                                                 </div>
                                             </div>
                                         </div>
@@ -139,12 +139,12 @@
 
                                     <div class="row clearfix">
                                         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-5 form-control-label">
-                                            <label for="confirm_password">Confirm Password : </label>
+                                            <label for="confirm_password">Confirmar contraseña : </label>
                                         </div>
                                         <div class="col-lg-10 col-md-10 col-sm-8 col-xs-7">
                                             <div class="form-group">
                                                 <div class="form-line">
-                                                    <input type="password" id="confirm_password" class="form-control" placeholder="Enter your new password again" name="password_confirmation">
+                                                    <input type="password" id="confirm_password" class="form-control" placeholder="Ingrese su nueva contraseña nuevamente" name="password_confirmation">
                                                 </div>
                                             </div>
                                         </div>
@@ -154,7 +154,7 @@
 
                                     <div class="row clearfix">
                                         <div class="col-lg-offset-2 col-md-offset-2 col-sm-offset-4 col-xs-offset-5">
-                                            <button type="submit" class="btn btn-primary m-t-15 waves-effect">UPDATE</button>
+                                            <button type="submit" class="btn btn-primary m-t-15 waves-effect">ACTUALIZAR</button>
                                         </div>
                                     </div>
                                 </form>

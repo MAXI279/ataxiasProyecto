@@ -9,7 +9,7 @@
 @section('content')
     <div class="container-fluid">
         <!-- Vertical Layout | With Floating Label -->
-        <a href="{{ route('admin.post.index') }}" class="btn btn-danger waves-effect">BACK</a>
+        <a href="{{ route('admin.post.index') }}" class="btn btn-danger waves-effect">ATRÁS</a>
         @if($post->is_approved == false)
             <button type="button" class="btn btn-success waves-effect pull-right" onclick="approvePost({{ $post->id }})">
                 <i class="material-icons">done</i>
@@ -33,7 +33,7 @@
                         <div class="header">
                             <h2>
                               {{ $post->title }}
-                                <small>Posted By <strong> <a href="">{{ $post->user->name }}</a></strong> on {{ $post->created_at->toFormattedDateString() }}</small>
+                                <small>Publicado Por <strong> <a href="">{{ $post->user->name }}</a></strong> on {{ $post->created_at->toFormattedDateString() }}</small>
                             </h2>
                         </div>
                         <div class="body">
@@ -45,7 +45,7 @@
                     <div class="card">
                         <div class="header bg-cyan">
                             <h2>
-                                Categoryies
+                                Categorías
                             </h2>
                         </div>
                         <div class="body">
@@ -69,7 +69,7 @@
                     <div class="card">
                         <div class="header bg-amber">
                             <h2>
-                                Featured Image
+                                Imagen principal
                             </h2>
                         </div>
                         <div class="body">

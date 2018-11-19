@@ -16,7 +16,7 @@
                 <div class="card">
                     <div class="header">
                         <h2>
-                            ALL FAVORITE POSTS
+                            POSTS FAVORITOS
                             <span class="badge bg-blue">{{ $posts->count() }}</span>
                         </h2>
                     </div>
@@ -26,23 +26,23 @@
                                 <thead>
                                 <tr>
                                     <th>ID</th>
-                                    <th>Title</th>
-                                    <th>Author</th>
+                                    <th>Título</th>
+                                    <th>Autor</th>
                                     <th><i class="material-icons">favorite</i></th>
                                     {{--<th><i class="material-icons">comment</i><</th>--}}
                                     <th><i class="material-icons">visibility</i></th>
-                                    <th>Action</th>
+                                    <th>Acción</th>
                                 </tr>
                                 </thead>
                                 <tfoot>
                                 <tr>
                                     <th>ID</th>
-                                    <th>Title</th>
-                                    <th>Author</th>
+                                    <th>Título</th>
+                                    <th>Autor</th>
                                     <th><i class="material-icons">favorite</i></th>
                                     {{--<th><i class="material-icons">comment</i><</th>--}}
                                     <th><i class="material-icons">visibility</i></th>
-                                    <th>Action</th>
+                                    <th>Acción</th>
                                 </tr>
                                 </tfoot>
                                 <tbody>

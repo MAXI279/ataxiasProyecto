@@ -84,7 +84,7 @@
                         <i class="material-icons">account_circle</i>
                     </div>
                     <div class="content">
-                        <div class="text">TODO DEL AUTHOR</div>
+                        <div class="text">TODO DEL AUTOR</div>
                         <div class="number count-to" data-from="0" data-to="{{ $author_count }}" data-speed="15" data-fresh-interval="20"></div>
                     </div>
                 </div>
@@ -93,7 +93,7 @@
                         <i class="material-icons">fiber_new</i>
                     </div>
                     <div class="content">
-                        <div class="text">TODAY AUTHOR</div>
+                        <div class="text">TODAY AUTOR</div>
                         <div class="number count-to" data-from="0" data-to="{{ $new_authors_today }}" data-speed="15" data-fresh-interval="20"></div>
                     </div>
                 </div>
@@ -108,14 +108,14 @@
                             <table class="table table-hover dashboard-task-infos">
                                 <thead>
                                     <tr>
-                                        <th>Rank</th>
-                                        <th>Title</th>
-                                        <th>Author</th>
-                                        <th>Views</th>
-                                        <th>Favorite</th>
-                                        <th>Comments</th>
-                                        <th>Status</th>
-                                        <th>Action</th>
+                                        <th>Ranking</th>
+                                        <th>Título</th>
+                                        <th>Autor</th>
+                                        <th>Vistas</th>
+                                        <th>Favorito</th>
+                                        <th>Comentarios</th>
+                                        <th>Estado</th>
+                                        <th>Acción</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -129,13 +129,13 @@
                                             <td>{{ $post->comments_count }}</td>
                                             <td>
                                                 @if($post->status == true)
-                                                    <span class="label bg-green">Published</span>
+                                                    <span class="label bg-green">Publicado</span>
                                                 @else
-                                                    <span class="label bg-red">Pending</span>
+                                                    <span class="label bg-red">Pendiente</span>
                                                 @endif
                                             </td>
                                             <td>
-                                                <a class="btn btn-sm btn-primary waves-effect" target="_blank" href="{{ route('post.details',$post->slug) }}">View</a>
+                                                <a class="btn btn-sm btn-primary waves-effect" target="_blank" href="{{ route('post.details',$post->slug) }}">Vista</a>
                                             </td>
                                         </tr>
                                     @endforeach
@@ -160,11 +160,11 @@
                             <table class="table table-hover dashboard-task-infos">
                                 <thead>
                                 <tr>
-                                    <th>Rank List</th>
-                                    <th>Name</th>
+                                    <th>Puesto de Ranking</th>
+                                    <th>Nombre</th>
                                     <th>Posts</th>
-                                    <th>Comments</th>
-                                    <th>Favorite</th>
+                                    <th>Comentarios</th>
+                                    <th>Favorito</th>
                                 </tr>
                                 </thead>
                                 <tbody>

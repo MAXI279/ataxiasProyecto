@@ -12,7 +12,7 @@
         <div class="block-header">
             <a class="btn btn-primary waves-effect" href="{{ route('admin.post.create') }}">
                 <i class="material-icons">add</i>
-                <span>Add New Post</span>
+                <span>Nuevo Post</span>
             </a>
         </div>
         <!-- Exportable Table -->
@@ -21,7 +21,7 @@
                 <div class="card">
                     <div class="header">
                         <h2>
-                            ALL POSTS
+                            POSTS
                             <span class="badge bg-blue">{{ $posts->count() }}</span>
                         </h2>
                     </div>

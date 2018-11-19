@@ -16,7 +16,7 @@
                 <div class="card">
                     <div class="header">
                         <h2>
-                            ALL COMMENTS
+                            COMENTARIOS
                             <span class="badge bg-blue">{{ $comments->count() }}</span>
                         </h2>
                     </div>

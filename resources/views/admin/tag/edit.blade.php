@@ -14,7 +14,7 @@
                 <div class="card">
                     <div class="header">
                         <h2>
-                          Edit TAG
+                          Editar TAG
                         </h2>
                     </div>
                     <div class="body">
@@ -24,12 +24,12 @@
                             <div class="form-group form-float">
                                 <div class="form-line">
                                     <input type="text" id="name" class="form-control" name="name" value="{{ $tag->name }}">
-                                    <label class="form-label">Tag Name</label>
+                                    <label class="form-label">Nombre del Tag</label>
                                 </div>
                             </div>
 
-                            <a  class="btn btn-danger m-t-15 waves-effect" href="{{ route('admin.tag.index') }}">BACK</a>
-                            <button type="submit" class="btn btn-primary m-t-15 waves-effect">SUBMIT</button>
+                            <a  class="btn btn-danger m-t-15 waves-effect" href="{{ route('admin.tag.index') }}">ATRÁS</a>
+                            <button type="submit" class="btn btn-primary m-t-15 waves-effect">ENVIAR</button>
                         </form>
                     </div>
                 </div>

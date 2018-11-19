@@ -21,7 +21,7 @@
                 <div class="card">
                     <div class="header">
                         <h2>
-                            ALL POSTS
+                            POSTS
                             <span class="badge bg-blue">{{ $posts->count() }}</span>
                         </h2>
                     </div>

@@ -51,7 +51,7 @@
                                 <li><a href="#"><i class="ion-eye"></i>{{ $post->view_count }}</a></li>
                             </ul>
                             <ul class="icons">
-                                <li>SHARE : </li>
+                                <li>COMPARTIR : </li>
                                 <li><a href="#"><i class="ion-social-facebook"></i></a></li>
                                 <li><a href="#"><i class="ion-social-twitter"></i></a></li>
                                 <li><a href="#"><i class="ion-social-pinterest"></i></a></li>

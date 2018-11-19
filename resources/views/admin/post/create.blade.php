@@ -17,25 +17,25 @@
                     <div class="card">
                         <div class="header">
                             <h2>
-                               ADD NEW POST
+                               NUEVO POST
                             </h2>
                         </div>
                         <div class="body">
                                 <div class="form-group form-float">
                                     <div class="form-line">
                                         <input type="text" id="title" class="form-control" name="title">
-                                        <label class="form-label">Post Title</label>
+                                        <label class="form-label">Título</label>
                                     </div>
                                 </div>
 
                                 <div class="form-group">
-                                    <label for="image">Featured Image</label>
+                                    <label for="image">Imagen principal</label>
                                     <input type="file" name="image">
                                 </div>
 
                             <div class="form-group">
                                 <input type="checkbox" id="publish" class="filled-in" name="status" value="1">
-                                <label for="publish">Publish</label>
+                                <label for="publish">Publicar</label>
                             </div>
 
                         </div>
@@ -45,7 +45,7 @@
                     <div class="card">
                         <div class="header">
                             <h2>
-                                Categories and Tags
+                                Categorías y Tags
                             </h2>
                         </div>
                         <div class="body">
@@ -72,7 +72,7 @@
                             </div>
 
                             <a  class="btn btn-danger m-t-15 waves-effect" href="{{ route('admin.category.index') }}">BACK</a>
-                            <button type="submit" class="btn btn-primary m-t-15 waves-effect">SUBMIT</button>
+                            <button type="submit" class="btn btn-primary m-t-15 waves-effect">ENVIAR</button>
 
                         </div>
                     </div>
@@ -83,7 +83,7 @@
                     <div class="card">
                         <div class="header">
                             <h2>
-                               BODY
+                               CONTENIDO
                             </h2>
                         </div>
                         <div class="body">

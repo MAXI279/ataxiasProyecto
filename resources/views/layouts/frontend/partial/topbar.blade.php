@@ -12,7 +12,7 @@
             </div><!-- .col -->
             <div class="col-12 col-lg-4 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
                 <div class="donate-btn">
-                    <a href="#">Colaborá</a>
+                    <a href="https://donaronline.org/atar/ayudanos-colabora-con-lo-que-puedas" target="_blank">Colaborá</a>
                 </div><!-- .donate-btn -->
             </div><!-- .col -->
         </div><!-- .row -->

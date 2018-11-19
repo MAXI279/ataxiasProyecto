@@ -15,7 +15,7 @@
                 <div class="card">
                     <div class="header">
                         <h2>
-                            ALL AUTHORS
+                            AUTORES
                             <span class="badge bg-blue">{{ $authors->count() }}</span>
                         </h2>
                     </div>
@@ -25,23 +25,23 @@
                                 <thead>
                                 <tr>
                                     <th>ID</th>
-                                    <th>Name</th>
+                                    <th>Nombre</th>
                                     <th>Posts</th>
-                                    <th>Comments</th>
-                                    <th>Favorite Posts</th>
-                                    <th>Created At</th>
-                                    <th>Action</th>
+                                    <th>Comentarios</th>
+                                    <th>Posts Favoritos</th>
+                                    <th>Creado en</th>
+                                    <th>Acción</th>
                                 </tr>
                                 </thead>
                                 <tfoot>
                                 <tr>
                                     <th>ID</th>
-                                    <th>Name</th>
+                                    <th>Nombre</th>
                                     <th>Posts</th>
-                                    <th>Comments</th>
-                                    <th>Favorite Posts</th>
-                                    <th>Created At</th>
-                                    <th>Action</th>
+                                    <th>Comentarios</th>
+                                    <th>Posts Favoritos</th>
+                                    <th>Creado en</th>
+                                    <th>Acción</th>
                                 </tr>
                                 </tfoot>
                                 <tbody>
