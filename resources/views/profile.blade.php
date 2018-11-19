@@ -1,6 +1,6 @@
 @extends('layouts.frontend.app')
 
-@section('title','Pofile')
+@section('title','Perfil')
 @push('css')
     <link href="{{ asset('assets/frontend/css/profile/styles.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/frontend/css/profile/responsive.css') }}" rel="stylesheet">

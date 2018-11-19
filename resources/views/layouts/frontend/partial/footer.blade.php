@@ -22,8 +22,8 @@
 
                     <ul>
                         <li><a href="#">Privacy Polticy</a></li>
-                        <li><a href="#">Become  a Volunteer</a></li>
-                        <li><a href="#">Donate</a></li>
+                        <li><a href="{{ route('asociarse') }}">Asociarse</a></li>
+                        <li><a href="https://donaronline.org/atar/ayudanos-colabora-con-lo-que-puedas" target="_blank">Colaborar</a></li>
                         <li><a href="#">Testimonials</a></li>
                         <li><a href="#">Causes</a></li>
                         <li><a href="#">Portfolio</a></li>

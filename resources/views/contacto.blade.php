@@ -1,6 +1,6 @@
 @extends('layouts.frontend.app')
 
-@section('title','Sobre nosotros')
+@section('title','Contacto')
 
 @section('content')
 <div class="container text-center">

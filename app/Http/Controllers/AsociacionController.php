@@ -15,4 +15,9 @@ class AsociacionController extends Controller
     {
         return view('asociacion');
     }
+
+    public function asociarse()
+    {
+        return view('asociarse');
+    }
 }

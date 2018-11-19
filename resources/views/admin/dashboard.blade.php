@@ -18,7 +18,7 @@
                         <i class="material-icons">playlist_add_check</i>
                     </div>
                     <div class="content">
-                        <div class="text">TODOS LOS POSTS</div>
+                        <div class="text">POSTS</div>
                         <div class="number count-to" data-from="0" data-to="{{ $posts->count() }}" data-speed="15" data-fresh-interval="20"></div>
                     </div>
                 </div>
@@ -29,7 +29,7 @@
                         <i class="material-icons">favorite</i>
                     </div>
                     <div class="content">
-                        <div class="text">TODOS LOS FAVORITOS</div>
+                        <div class="text">FAVORITOS</div>
                         <div class="number count-to" data-from="0" data-to="{{ Auth::user() ->favorite_posts()->count() }}" data-speed="1000" data-fresh-interval="20"></div>
                     </div>
                 </div>
@@ -51,7 +51,7 @@
                         <i class="material-icons">person_add</i>
                     </div>
                     <div class="content">
-                        <div class="text">VISTAS TOTAL</div>
+                        <div class="text">VISTAS</div>
                         <div class="number count-to" data-from="0" data-to="{{ $all_views }}" data-speed="1000" data-fresh-interval="20"></div>
                     </div>
                 </div>

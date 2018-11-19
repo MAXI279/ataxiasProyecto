@@ -23,6 +23,9 @@
             <li class="nav-item {{ Request::is('contacto') ? 'current-menu-item active' : '' }}">
                 <a class="nav-link" href="{{ route('contacto') }}">Contacto</a>
             </li>
+            <li class="nav-item {{ Request::is('asociarse') ? 'current-menu-item active' : '' }}">
+                <a class="nav-link" href="{{ route('asociarse') }}">Asociarse</a>
+            </li>
             @guest
                 <li class="nav-item {{ Request::is('login') ? 'current-menu-item active' : '' }}">
                     <a class="nav-link" href="{{ route('login') }}">Iniciar sesión</a>
