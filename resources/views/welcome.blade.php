@@ -1,6 +1,6 @@
-@extends('layouts.frontend.app')
+@extends('layouts.app')
 
-@section('title','Home')
+@section('title','Ataxias')
 
 @section('content')
     <div class="main-slider">

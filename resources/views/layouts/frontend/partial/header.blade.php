@@ -53,12 +53,12 @@
                 @else
                     @if(Auth::user()->role->id == 1)
                         <li class="nav-item {{ Request::is('admin*') ? 'current-menu-item active' : '' }}">
-                            <a class="nav-link" href="{{ route('admin.dashboard') }}">Tablero</a>
+                            <a class="nav-link" href="{{ route('admin.dashboard') }}">Perfil</a>
                         </li>
                     @endif
                     @if(Auth::user()->role->id == 2)
                         <li class="nav-item {{ Request::is('author*') ? 'current-menu-item active' : '' }}">
-                            <a class="nav-link" href="{{ route('author.dashboard') }}">Tablero</a>
+                            <a class="nav-link" href="{{ route('author.dashboard') }}">Perfil</a>
                         </li>
                     @endif
                 @endguest
